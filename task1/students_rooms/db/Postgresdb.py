@@ -1,7 +1,7 @@
 import os
 from dotenv import load_dotenv
 import psycopg2
-from Interfacedb import Interfacedb
+from db.Interfacedb import Interfacedb
 
 
 load_dotenv()
@@ -31,7 +31,6 @@ class Postgresdb(Interfacedb):
         self.connection.close()
         print("Conn closed")
 
-# inside Postgresdb.py
     def execute(self, query: str, params=None):
         self.cursor.execute(query, params)
         self.connection.commit()
