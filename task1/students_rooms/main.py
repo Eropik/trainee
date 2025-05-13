@@ -4,7 +4,7 @@ from db.Postgresdb import Postgresdb
 from file.JsonWriter import JsonWriter
 from query.QueryResTransformer import QueryResTransformer
 from query.QueryService import QueryService
-from query.QueryWriterJson import convert_result
+from query.QueryResTransformer import convert_result
 from repository.StudentsRepository import StudentRepository
 from repository.RoomRepository import RoomRepository
 from repository.FileRepository import FileRepository
@@ -15,7 +15,7 @@ load_dotenv()
 
 if __name__ == "__main__":
     queries = {
-        "Person count in y_rooms": os.getenv("FILE_PATH_1_QUERY"),
+        "Person count in rooms": os.getenv("FILE_PATH_1_QUERY"),
         "Rooms with min average age": os.getenv("FILE_PATH_2_QUERY"),
         "Rooms with max age gap": os.getenv("FILE_PATH_3_QUERY"),
         "Rooms with both sexes": os.getenv("FILE_PATH_4_QUERY"),

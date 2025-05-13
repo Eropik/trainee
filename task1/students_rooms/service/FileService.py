@@ -14,12 +14,14 @@ class FileProcessingService:
         try:
             table_type = filename.split('_')[0]
 
-            if table_type == "rooms":
-                self.room_repo.truncate()
-                self.room_repo.insert(data)
-            elif table_type == "students":
-                self.student_repo.truncate()
-                self.student_repo.insert(data)
+            handlers = {
+                "rooms": self.room_repo,
+                "students": self.student_repo,
+            }
+            repo = handlers.get(table_type)
+            if repo:
+                repo.truncate()
+                repo.insert(data)
 
             self.file_repo.add(filename)
             print(f"Successfully processed {filename}")
