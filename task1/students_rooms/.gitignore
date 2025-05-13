@@ -1,5 +1,5 @@
 .env
-query_avg_age
-query_different_sex
-query_max_gape_age
-query_person_rooms
+query/query_txt/query_avg_age
+query/query_txt/query_different_sex
+query/query_txt/query_max_gape_age
+query/query_txt/query_person_rooms
