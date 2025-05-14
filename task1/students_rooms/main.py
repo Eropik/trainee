@@ -1,6 +1,6 @@
 import os
 from dotenv import load_dotenv
-from db.postgres_db import Postgresdb
+from db.postgres_db import PostgresConnector
 from file.json_writer import JsonWriter
 from query.query_res_transformer import QueryResTransformer
 from query.query_service import QueryService
@@ -22,7 +22,7 @@ if __name__ == "__main__":
     }
     output_file = os.getenv("QUERY_RES_DATA")
 
-    db = Postgresdb()
+    db = PostgresConnector()
     db.connect()
 
     student_repo = StudentRepository(db)

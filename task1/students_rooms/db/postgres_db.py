@@ -1,12 +1,12 @@
 import os
 from dotenv import load_dotenv
 import psycopg2
-from db.interface_db import Interfacedb
+from db.interface_db import DatabaseInterface
 
 load_dotenv()
 
 
-class Postgresdb(Interfacedb):
+class PostgresConnector(DatabaseInterface):
     def __init__(self):
         self.connection = None
         self.cursor = None

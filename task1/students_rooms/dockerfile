@@ -1,10 +1,16 @@
 FROM python:3.11-slim
 
+ENV PYTHONUNBUFFERED=1
+ENV PYTHONPATH=/app
+
 WORKDIR /app
 
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . .
+
+RUN echo "===== FILES IN /app =====" && find /app
+
 
 CMD ["python", "main.py"]

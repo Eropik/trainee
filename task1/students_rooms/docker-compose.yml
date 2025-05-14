@@ -1,26 +1,21 @@
 version: '3.8'
+
 services:
   app:
-    build: .
+    build:
+     context: .
+     dockerfile: Dockerfile
     volumes:
-      - .:/app
-    depends_on:
-      - db
+      - type: bind
+        source: ./query/query_txt
+        target: /app/query/query_txt
+      - type: bind
+        source: ./query/query_data
+        target: /app/query/query_data
+      - type: bind
+        source: ../db_data
+        target: /app/db_data
     env_file:
       - .env
-    command: python main.py
-
-
-  db:
-    image: postgres:15
-    environment:
-      POSTGRES_DB: ${DB_NAME}
-      POSTGRES_USER: ${DB_USER}
-      POSTGRES_PASSWORD: ${DB_PASSWORD}
     ports:
-      - "5432:5432"
-    volumes:
-      - postgres_data:/var/lib/postgresql/data
-
-volumes:
-  postgres_data:
+      - "8000:8000"

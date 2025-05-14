@@ -1,0 +1,102 @@
+[
+    {
+        "id": 0,
+        "name": "Room A101",
+        "check_in_time": "2023-01-10T08:00:00"
+    },
+    {
+        "id": 1,
+        "name": "Room A102",
+        "check_in_time": "2023-01-11T09:00:00"
+    },
+    {
+        "id": 2,
+        "name": "Room A103",
+        "check_in_time": "2023-01-12T10:00:00"
+    },
+    {
+        "id": 3,
+        "name": "Room A104",
+        "check_in_time": "2023-01-13T11:00:00"
+    },
+    {
+        "id": 4,
+        "name": "Room A105",
+        "check_in_time": "2023-01-14T12:00:00"
+    },
+    {
+        "id": 5,
+        "name": "Room A106",
+        "check_in_time": "2023-01-15T13:00:00"
+    },
+    {
+        "id": 6,
+        "name": "Room A107",
+        "check_in_time": "2023-01-16T14:00:00"
+    },
+    {
+        "id": 7,
+        "name": "Room A108",
+        "check_in_time": "2023-01-17T15:00:00"
+    },
+    {
+        "id": 8,
+        "name": "Room A110",
+        "check_in_time": "2023-01-18T16:00:00"
+    },
+    {
+        "id": 9,
+        "name": "Room A111",
+        "check_in_time": "2023-01-19T17:00:00"
+    },
+    {
+        "id": 10,
+        "name": "Room A112",
+        "check_in_time": "2023-01-20T18:00:00"
+    },
+    {
+        "id": 11,
+        "name": "Room A113",
+        "check_in_time": "2023-01-21T19:00:00"
+    },
+    {
+        "id": 12,
+        "name": "Room A114",
+        "check_in_time": "2023-01-22T20:00:00"
+    },
+    {
+        "id": 13,
+        "name": "Room A115",
+        "check_in_time": "2023-01-23T21:00:00"
+    },
+    {
+        "id": 14,
+        "name": "Room A116",
+        "check_in_time": "2023-01-24T22:00:00"
+    },
+    {
+        "id": 15,
+        "name": "Room A117",
+        "check_in_time": "2023-01-25T23:00:00"
+    },
+    {
+        "id": 16,
+        "name": "Room A118",
+        "check_in_time": "2023-01-26T08:00:00"
+    },
+    {
+        "id": 17,
+        "name": "Room A119",
+        "check_in_time": "2023-01-27T09:00:00"
+    },
+    {
+        "id": 18,
+        "name": "Room A120",
+        "check_in_time": "2023-01-28T10:00:00"
+    },
+    {
+        "id": 19,
+        "name": "Room A121",
+        "check_in_time": "2023-01-29T11:00:00"
+    }
+]

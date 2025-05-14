@@ -1,7 +1,7 @@
 from abc import ABC, abstractmethod
 
 
-class Interfacedb(ABC):
+class DatabaseInterface(ABC):
     @abstractmethod
     def connect(self): pass
 
