@@ -1,21 +1,37 @@
 version: '3.8'
 
 services:
+  db:
+    image: postgres:15
+    restart: always
+    environment:
+      POSTGRES_DB: ${DB_NAME}
+      POSTGRES_USER: ${DB_USER}
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+
   app:
     build:
-     context: .
-     dockerfile: Dockerfile
-    volumes:
-      - type: bind
-        source: ./query/query_txt
-        target: /app/query/query_txt
-      - type: bind
-        source: ./query/query_data
-        target: /app/query/query_data
-      - type: bind
-        source: ../db_data
-        target: /app/db_data
+      context: .
+      dockerfile: Dockerfile
+    depends_on:
+      - db
     env_file:
       - .env
+    volumes:
+      - ./query/query_txt:/app/query/query_txt
+      - ../db_data:/app/db_data
     ports:
       - "8000:8000"
+    command: >
+      sh -c "
+      echo 'Waiting for DB...' &&
+      sleep 5 &&
+      python main.py
+      "
+
+volumes:
+  postgres_data:

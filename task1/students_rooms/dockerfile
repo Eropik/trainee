@@ -10,7 +10,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . .
 
-RUN echo "===== FILES IN /app =====" && find /app
-
-
 CMD ["python", "main.py"]
