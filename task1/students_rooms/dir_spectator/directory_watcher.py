@@ -3,9 +3,9 @@ from datetime import datetime
 
 
 class DirectoryWatcher:
-    def __init__(self, watch_dir, file_service, file_repo):
+    def __init__(self, watch_dir, model_service, file_repo):
         self.watch_dir = watch_dir
-        self.file_service = file_service
+        self.model_service = model_service
         self.file_repo = file_repo
 
     def watch(self):
@@ -17,6 +17,6 @@ class DirectoryWatcher:
                 try:
                     date_str = filename.split('_')[1].replace('.json', '')
                     datetime.strptime(date_str, '%d.%m.%Y')
-                    self.file_service.process(filename, path)
+                    self.model_service.process(filename, path)
                 except Exception as e:
                     print(f"Skipping {filename}: {str(e)}")

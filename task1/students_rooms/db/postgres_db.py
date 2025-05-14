@@ -1,8 +1,7 @@
 import os
 from dotenv import load_dotenv
 import psycopg2
-from db.Interfacedb import Interfacedb
-
+from db.interface_db import Interfacedb
 
 load_dotenv()
 

@@ -6,5 +6,7 @@ class FileRepository:
         self.db.execute("SELECT name FROM proceed_files")
         return {row[0] for row in self.db.fetch_all()}
 
+
+
     def add(self, filename):
         self.db.execute("INSERT INTO proceed_files (name) VALUES (%s)", (filename,))

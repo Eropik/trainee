@@ -1,6 +1,7 @@
-from file.JsonReader import JsonReader
+from file.json_reader import JsonReader
 
-class FileProcessingService:
+
+class ModelService:
     def __init__(self, db, student_repo, room_repo, file_repo):
         self.db = db
         self.student_repo = student_repo

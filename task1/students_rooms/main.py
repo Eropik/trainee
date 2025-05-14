@@ -1,15 +1,15 @@
 import os
 from dotenv import load_dotenv
-from db.Postgresdb import Postgresdb
-from file.JsonWriter import JsonWriter
-from query.QueryResTransformer import QueryResTransformer
-from query.QueryService import QueryService
-from query.QueryResTransformer import convert_result
-from repository.StudentsRepository import StudentRepository
-from repository.RoomRepository import RoomRepository
-from repository.FileRepository import FileRepository
-from service.FileService import FileProcessingService
-from dir_spectator.DirWatcher import DirectoryWatcher
+from db.postgres_db import Postgresdb
+from file.json_writer import JsonWriter
+from query.query_res_transformer import QueryResTransformer
+from query.query_service import QueryService
+from query.query_res_transformer import convert_result
+from repository.students_repository import StudentRepository
+from repository.room_repository import RoomRepository
+from repository.file_repository import FileRepository
+from dir_spectator.directory_watcher import DirectoryWatcher
+from service.model_service import ModelService
 
 load_dotenv()
 
@@ -29,7 +29,7 @@ if __name__ == "__main__":
     room_repo = RoomRepository(db)
     file_repo = FileRepository(db)
 
-    service = FileProcessingService(db, student_repo, room_repo, file_repo)
+    service = ModelService(db, student_repo, room_repo, file_repo)
     watcher = DirectoryWatcher(os.getenv("DATA_DIR"), service, file_repo)
 
     watcher.watch()
