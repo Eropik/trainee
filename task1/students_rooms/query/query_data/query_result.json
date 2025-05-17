@@ -2,147 +2,219 @@
     {
         "Person count in rooms": [
             {
-                "name": "Room A118",
+                "name": "AAAAA A118",
                 "count": 0
             },
             {
-                "name": "Room A121",
+                "name": "AAAAA B204",
                 "count": 0
             },
             {
-                "name": "Room A119",
+                "name": "AAAAA A117",
                 "count": 0
             },
             {
-                "name": "Room A120",
+                "name": "AAAAA D403",
                 "count": 0
             },
             {
-                "name": "Room A117",
+                "name": "AAAAA A119",
                 "count": 0
             },
             {
-                "name": "Room A115",
+                "name": "AAAAA C302",
+                "count": 0
+            },
+            {
+                "name": "AAAAA D402",
+                "count": 0
+            },
+            {
+                "name": "AAAAA A114",
                 "count": 1
             },
             {
-                "name": "Room A112",
+                "name": "AAAAA A113",
                 "count": 1
             },
             {
-                "name": "Room A116",
+                "name": "AAAAA C301",
                 "count": 1
             },
             {
-                "name": "Room A106",
+                "name": "AAAAA B201",
                 "count": 1
             },
             {
-                "name": "Room A114",
+                "name": "AAAAA A120",
                 "count": 1
             },
             {
-                "name": "Room A103",
+                "name": "AAAAA B203",
                 "count": 1
             },
             {
-                "name": "Room A107",
+                "name": "AAAAA A112",
                 "count": 1
             },
             {
-                "name": "Room A113",
+                "name": "AAAAA D401",
                 "count": 1
             },
             {
-                "name": "Room A104",
+                "name": "AAAAA A121",
                 "count": 1
             },
             {
-                "name": "Room A110",
+                "name": "AAAAA A103",
                 "count": 1
             },
             {
-                "name": "Room A108",
+                "name": "AAAAA A115",
+                "count": 1
+            },
+            {
+                "name": "AAAAA A104",
+                "count": 1
+            },
+            {
+                "name": "AAAAA A116",
+                "count": 1
+            },
+            {
+                "name": "AAAAA A107",
                 "count": 2
             },
             {
-                "name": "NNNNN A101",
+                "name": "AAAAA A110",
                 "count": 2
             },
             {
-                "name": "Room A102",
+                "name": "AAAAA A101",
                 "count": 2
             },
             {
-                "name": "Room A105",
+                "name": "AAAAA A111",
                 "count": 2
             },
             {
-                "name": "Room A111",
+                "name": "AAAAA A106",
                 "count": 2
+            },
+            {
+                "name": "AAAAA A102",
+                "count": 2
+            },
+            {
+                "name": "AAAAA B202",
+                "count": 2
+            },
+            {
+                "name": "AAAAA C303",
+                "count": 2
+            },
+            {
+                "name": "AAAAA A108",
+                "count": 4
+            },
+            {
+                "name": "AAAAA A105",
+                "count": 4
             }
         ]
     },
     {
         "Rooms with min average age": [
             {
-                "name": "Room A112",
+                "name": "AAAAA A115",
+                "avg_age": 55.0
+            },
+            {
+                "name": "AAAAA B201",
+                "avg_age": 35.0
+            },
+            {
+                "name": "AAAAA A112",
                 "avg_age": 27.0
             },
             {
-                "name": "Room A107",
+                "name": "AAAAA A107",
                 "avg_age": 25.0
             },
             {
-                "name": "Room A103",
+                "name": "AAAAA A110",
                 "avg_age": 25.0
             },
             {
-                "name": "Room A115",
+                "name": "AAAAA A103",
                 "avg_age": 25.0
             },
             {
-                "name": "Room A110",
+                "name": "AAAAA A113",
                 "avg_age": 25.0
             },
             {
-                "name": "Room A113",
+                "name": "AAAAA D401",
                 "avg_age": 25.0
             },
             {
-                "name": "Room A114",
+                "name": "AAAAA A121",
+                "avg_age": 25.0
+            },
+            {
+                "name": "AAAAA A101",
+                "avg_age": 24.5
+            },
+            {
+                "name": "AAAAA B202",
+                "avg_age": 24.5
+            },
+            {
+                "name": "AAAAA C303",
                 "avg_age": 24.0
             },
             {
-                "name": "NNNNN A101",
+                "name": "AAAAA A114",
                 "avg_age": 24.0
             },
             {
-                "name": "Room A105",
+                "name": "AAAAA A105",
                 "avg_age": 23.5
             },
             {
-                "name": "Room A106",
+                "name": "AAAAA A120",
                 "avg_age": 23.0
             },
             {
-                "name": "Room A102",
+                "name": "AAAAA A106",
                 "avg_age": 23.0
             },
             {
-                "name": "Room A111",
+                "name": "AAAAA C301",
                 "avg_age": 23.0
             },
             {
-                "name": "Room A116",
+                "name": "AAAAA A111",
+                "avg_age": 23.0
+            },
+            {
+                "name": "AAAAA A102",
+                "avg_age": 23.0
+            },
+            {
+                "name": "AAAAA A116",
                 "avg_age": 22.0
             },
             {
-                "name": "Room A104",
+                "name": "AAAAA B203",
                 "avg_age": 22.0
             },
             {
-                "name": "Room A108",
+                "name": "AAAAA A108",
+                "avg_age": 22.0
+            },
+            {
+                "name": "AAAAA A104",
                 "avg_age": 22.0
             }
         ]
@@ -150,68 +222,104 @@
     {
         "Rooms with max age gap": [
             {
-                "name": "Room A111",
+                "name": "AAAAA C303",
                 "age_gap": 2.0
             },
             {
-                "name": "Room A105",
+                "name": "AAAAA A111",
+                "age_gap": 2.0
+            },
+            {
+                "name": "AAAAA A101",
                 "age_gap": 1.0
             },
             {
-                "name": "Room A115",
+                "name": "AAAAA B202",
+                "age_gap": 1.0
+            },
+            {
+                "name": "AAAAA A105",
+                "age_gap": 1.0
+            },
+            {
+                "name": "AAAAA A104",
                 "age_gap": 0.0
             },
             {
-                "name": "Room A108",
+                "name": "AAAAA A116",
                 "age_gap": 0.0
             },
             {
-                "name": "Room A107",
+                "name": "AAAAA A114",
                 "age_gap": 0.0
             },
             {
-                "name": "Room A113",
+                "name": "AAAAA A113",
                 "age_gap": 0.0
             },
             {
-                "name": "Room A104",
+                "name": "AAAAA A106",
                 "age_gap": 0.0
             },
             {
-                "name": "Room A110",
+                "name": "AAAAA A102",
                 "age_gap": 0.0
             },
             {
-                "name": "Room A112",
+                "name": "AAAAA A120",
                 "age_gap": 0.0
             },
             {
-                "name": "Room A116",
+                "name": "AAAAA A112",
                 "age_gap": 0.0
             },
             {
-                "name": "Room A106",
+                "name": "AAAAA B203",
                 "age_gap": 0.0
             },
             {
-                "name": "NNNNN A101",
+                "name": "AAAAA D401",
                 "age_gap": 0.0
             },
             {
-                "name": "Room A114",
+                "name": "AAAAA A121",
                 "age_gap": 0.0
             },
             {
-                "name": "Room A102",
+                "name": "AAAAA A108",
                 "age_gap": 0.0
             },
             {
-                "name": "Room A103",
+                "name": "AAAAA B201",
+                "age_gap": 0.0
+            },
+            {
+                "name": "AAAAA A107",
+                "age_gap": 0.0
+            },
+            {
+                "name": "AAAAA A110",
+                "age_gap": 0.0
+            },
+            {
+                "name": "AAAAA C301",
+                "age_gap": 0.0
+            },
+            {
+                "name": "AAAAA A103",
+                "age_gap": 0.0
+            },
+            {
+                "name": "AAAAA A115",
                 "age_gap": 0.0
             }
         ]
     },
     {
-        "Rooms with both sexes": []
+        "Rooms with both sexes": [
+            {
+                "name": "AAAAA C303"
+            }
+        ]
     }
 ]

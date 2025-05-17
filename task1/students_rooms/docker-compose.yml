@@ -1,7 +1,11 @@
 version: '3.8'
 
+networks:
+  dem:
+
 services:
-  db:
+  postgres:
+    container_name: students_rooms
     image: postgres:15
     restart: always
     environment:
@@ -12,18 +16,27 @@ services:
       - postgres_data:/var/lib/postgresql/data
     ports:
       - "5432:5432"
+    networks:
+      - dem
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${DB_USER} -d ${DB_NAME}"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
 
   app:
     build:
       context: .
       dockerfile: Dockerfile
     depends_on:
-      - db
+      postgres:
+        condition: service_healthy
     env_file:
       - .env
     volumes:
       - ./query/query_txt:/app/query/query_txt
-      - ../db_data:/app/db_data
+      - ./query/query_data:/app/query/query_data
+      - ../db_data:/app/db_data  # ../db_data to ./db_data
     ports:
       - "8000:8000"
     command: >
@@ -32,6 +45,11 @@ services:
       sleep 5 &&
       python main.py
       "
+    networks:
+      - dem
 
 volumes:
   postgres_data:
+    driver_opts:
+      type: tmpfs
+      device: tmpfs
