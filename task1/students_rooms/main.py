@@ -1,7 +1,6 @@
 import os
 from dotenv import load_dotenv
 
-from db.init_db import DatabaseInitializer
 from db.postgres_db import PostgresConnector
 from file.json_writer import JsonWriter
 from query.query_res_transformer import QueryResTransformer
@@ -27,9 +26,6 @@ if __name__ == "__main__":
     db = PostgresConnector()
     db.connect()
 
-    initializer = DatabaseInitializer(db)
-    initializer.initialize()
-
     student_repo = StudentRepository(db)
     room_repo = RoomRepository(db)
     file_repo = FileRepository(db)
@@ -38,6 +34,8 @@ if __name__ == "__main__":
     watcher = DirectoryWatcher(os.getenv("DATA_DIR"), service, file_repo)
 
     watcher.watch()
+
+    db.connection.commit()
 
     query_service = QueryService(db)
     transformer = QueryResTransformer(queries)

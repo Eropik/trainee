@@ -13,7 +13,7 @@ class PostgresConnector(DatabaseInterface):
 
     def connect(self):
         self.connection = psycopg2.connect(
-            host=os.getenv("DB_IP"),
+            host=os.getenv("DB_HOST"),
             database=os.getenv("DB_NAME"),
             user=os.getenv("DB_USER"),
             password=os.getenv("DB_PASSWORD"),
@@ -22,17 +22,10 @@ class PostgresConnector(DatabaseInterface):
         self.cursor = self.connection.cursor()
         print("Connected")
 
-    #def fetch_all(self):
-    #    return self.cursor.fetchall()
-
     def close(self):
         self.cursor.close()
         self.connection.close()
         print("Conn closed")
-
-    #def execute(self, query: str, params=None):
-    #    self.cursor.execute(query, params)
-    #    self.connection.commit()
 
     def execute(self, query: str, params=None):
         self.cursor.execute(query, params)

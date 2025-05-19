@@ -162,19 +162,19 @@
                 "avg_age": 25.0
             },
             {
+                "name": "AAAAA B202",
+                "avg_age": 25.0
+            },
+            {
                 "name": "AAAAA A101",
                 "avg_age": 24.5
             },
             {
-                "name": "AAAAA B202",
-                "avg_age": 24.5
-            },
-            {
-                "name": "AAAAA C303",
+                "name": "AAAAA A114",
                 "avg_age": 24.0
             },
             {
-                "name": "AAAAA A114",
+                "name": "AAAAA C303",
                 "avg_age": 24.0
             },
             {
@@ -182,7 +182,7 @@
                 "avg_age": 23.5
             },
             {
-                "name": "AAAAA A120",
+                "name": "AAAAA A111",
                 "avg_age": 23.0
             },
             {
@@ -190,16 +190,20 @@
                 "avg_age": 23.0
             },
             {
+                "name": "AAAAA A102",
+                "avg_age": 23.0
+            },
+            {
+                "name": "AAAAA A120",
+                "avg_age": 23.0
+            },
+            {
                 "name": "AAAAA C301",
                 "avg_age": 23.0
             },
             {
-                "name": "AAAAA A111",
-                "avg_age": 23.0
-            },
-            {
-                "name": "AAAAA A102",
-                "avg_age": 23.0
+                "name": "AAAAA A104",
+                "avg_age": 22.0
             },
             {
                 "name": "AAAAA A116",
@@ -212,15 +216,15 @@
             {
                 "name": "AAAAA A108",
                 "avg_age": 22.0
-            },
-            {
-                "name": "AAAAA A104",
-                "avg_age": 22.0
             }
         ]
     },
     {
         "Rooms with max age gap": [
+            {
+                "name": "AAAAA B202",
+                "age_gap": 2.0
+            },
             {
                 "name": "AAAAA C303",
                 "age_gap": 2.0
@@ -231,10 +235,6 @@
             },
             {
                 "name": "AAAAA A101",
-                "age_gap": 1.0
-            },
-            {
-                "name": "AAAAA B202",
                 "age_gap": 1.0
             },
             {
