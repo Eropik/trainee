@@ -35,8 +35,6 @@ services:
     depends_on:
       postgres:
         condition: service_healthy
-    environment:
-      - PROCESS_ONCE=true
     env_file:
       - .env
     volumes:

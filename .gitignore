@@ -167,8 +167,13 @@ cython_debug/
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
 
-# Ruff stuff:
-.ruff_cache/
 
-# PyPI configuration file
-.pypirc
+# IDE (PyCharm, VS Code)
+.idea/
+
+# Docker
+.dockerignore
+
+.db_data
+/task1/db_data
+pgdata/
