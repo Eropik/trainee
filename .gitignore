@@ -173,10 +173,3 @@ cython_debug/
 # PyPI configuration file
 .pypirc
 
-
-task5_spark/
-task4_bom_explosion/
-task4_sql/
-task3_bom_explosion/
-task2_pandas/
-
