@@ -1,4 +1,0 @@
-select  r.name as room, round(avg(extract(year from age(current_date, s.birthday ))),3) as avg_year from rooms r
-join students s on s.room = r.id
-group by  r.name
-order by avg_year desc;

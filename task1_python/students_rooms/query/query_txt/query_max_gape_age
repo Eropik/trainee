@@ -1,4 +1,0 @@
-select r.name as room, max(extract(year from age(current_date, s.birthday ))) - min(extract(year from age(current_date, s.birthday ))) as max_gape from rooms r
-join students s on s.room = r.id
-group by  r.name
-order by max_gape desc;
