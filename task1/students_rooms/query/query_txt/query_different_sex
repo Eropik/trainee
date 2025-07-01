@@ -1,4 +1,0 @@
-select r.name from rooms r
-join students s on s.room = r.id
-group by r.name
-having (count(distinct s.sex )=2);

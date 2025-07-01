@@ -1,4 +1,0 @@
-select r.name, count(s.id) as persons_count from rooms r
-left join students s on s.room = r.id
-group by r.name
-order by persons_count asc;
